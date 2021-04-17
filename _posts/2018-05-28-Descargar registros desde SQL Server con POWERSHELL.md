@@ -3,7 +3,7 @@ layout: post
 active: blog
 title: Descargar registros desde SQL Server con POWERSHELL
 date: 2018-05-28
-categories: [programación ,powershellaventura, aventura]
+categories: [programación ,powershell]
 ---
 
 {:class="parrafo-imagen"}

@@ -35,10 +35,18 @@
                     <a class="carousel-link " href="{{ site.baseurl }}{{ post.url }}">
                         <img class="fondo" {{ html }} />
                     
-                    <div class="absoluto carousel-titulo">                    
-                        <h3>{{ post.title }}</h3>
+                    <div class="absoluto carousel-titulo">    
+                      <div>
+                      {% for category in post.categories | limit: 2 %}
+                        <h5>
+                          <a href="#"># {{ category }}</a>
+                        </h5>
+                      {% endfor %}
+                      </div>
+                      <h3>{{ post.title }}</h3>
                     </div>
                     </a>
+
                 </div>
                 {% assign foundImage = 1 %}
             {% endif %}
@@ -48,15 +56,6 @@
     <!-- ***** -->
     {% endfor %}
 
-    {%- comment -%} <div class="carousel-item active">
-      <img src="la.jpg" alt="Los Angeles">
-    </div>
-    <div class="carousel-item">
-      <img src="chicago.jpg" alt="Chicago">
-    </div>
-    <div class="carousel-item">
-      <img src="ny.jpg" alt="New York">
-    </div> {%- endcomment -%}
   </div>
 
   <!-- Left and right controls -->

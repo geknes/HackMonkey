@@ -793,6 +793,14 @@ footer {
       color: $white;
     }
   }
+  h5 {
+    display: flex;
+    color: $lightGray;
+    font-size: 16px;
+    @include mobile {
+      font-size: 13px;
+    }
+  }
 }
 
 .fondo {

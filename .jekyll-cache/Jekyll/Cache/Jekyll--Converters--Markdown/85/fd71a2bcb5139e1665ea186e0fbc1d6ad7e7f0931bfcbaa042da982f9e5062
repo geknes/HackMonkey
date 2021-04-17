@@ -1,0 +1,14 @@
+I"�<p class="parrafo-imagen"><img src="https://images.unsplash.com/photo-1561409625-df3c51c39c2f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1375&amp;q=80" alt="image-title-here" class="img-responsive" /></p>
+
+<p class="img-referencia">Foto de <a href="https://unsplash.com/@drbabooli">Bahman Adlou</a> en <a href="https://unsplash.com/photos/hGV2TfOh0ns">Unsplash</a></p>
+
+<p id="_parrafo">Estaba buscando una manera de poder adjuntar un archivo dentro de un documento de word con python y encontré una librería que trabaja con archvos .docx pero que no me fue de mucha ayuda.</p>
+
+<p>Al final logré adjuntar el archivo Excel en Word con la ayuda de la librería win32com. No encontré mucha documentación pero que en la siguiente <a href="https://msdn.microsoft.com/en-us/vba/word-vba/articles/object-model-word-vba-reference">página</a> pude encontrar metodos que son compatibles a la hora de usar la librería win32com con python.</p>
+
+<h2 id="aquí-el-código-en-python">Aquí el código en Python</h2>
+
+<script src="https://gist.github.com/geknes/3d6b5817c3cd4764ba6ffbbe7fa6e9f1.js"></script>
+
+<p>Espero les sirva :)</p>
+:ET

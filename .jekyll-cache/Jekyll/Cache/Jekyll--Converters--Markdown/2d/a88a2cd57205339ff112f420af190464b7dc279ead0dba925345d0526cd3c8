@@ -1,0 +1,16 @@
+I"/<p class="parrafo-imagen"><img src="https://images.unsplash.com/photo-1500576992153-0271099def59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;q=80" alt="image-title-here" class="img-responsive" /></p>
+
+<p class="img-referencia">Foto de <a href="https://unsplash.com/@lemonvlad">Vladislav Klapin</a> en <a href="https://unsplash.com">Unsplash</a>
+<!-- Referencia de la foto --></p>
+
+<p id="_parrafo">Hay muchas maneras de obtener un mismo resultado cuando trabajamos con Powershell.</p>
+
+<p>Veamos un ejemplo sencillo con el cual todo buen programador empieza en este mundo de codigos.</p>
+
+<h2 id="aquí-el-código-en-powershell">Aquí el código en Powershell</h2>
+
+<pre><code class="language-Powershell">
+Write-Host "Hola Mundo!"
+
+</code></pre>
+:ET

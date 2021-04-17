@@ -1,0 +1,39 @@
+I"_<p class="parrafo-imagen"><img src="https://images.unsplash.com/photo-1590615368995-77191aa9e571?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=784&amp;q=80" alt="image-title-here" class="img-responsive" /></p>
+
+<p class="img-referencia">Foto de <a href="https://unsplash.com/@theeastlondonphotographer">Ehimetalor Akhere</a> en <a href="https://unsplash.com">Unsplash</a>
+<!-- Referencia de la foto --></p>
+
+<p id="_parrafo">Bienvenido a mi primer artículo donde te enseñaré a descargar una tabla de registros desde SQL server a CSV con Powershell.</p>
+
+<h2 id="aquí-el-código-en-powershell">Aquí el código en Powershell</h2>
+
+<pre><code class="language-Powershell">
+#Cadena de conexión
+$BaseDeDatos = "DB_Ejemplo"
+$Servidor = "Servidor_Ejemplo"
+
+#Archivo a exportar
+$AttachmentPath1 ='D:\archivo.csv'
+
+
+# Escribe tu sentencia SQL para extraer tu tabla
+$SqlQuery1 = "Select * From Tu_Tabla"
+
+$SqlConnection = New-Object System.Data.SqlClient.SqlConnection
+$SqlConnection.ConnectionString = "Server = $Servidor; Database = $BaseDeDatos; Integrated Security = True"
+$SqlCmd = New-Object System.Data.SqlClient.SqlCommand
+$SqlCmd.CommandText = $SqlQuery1
+$SqlCmd.Connection = $SqlConnection
+$SqlAdapter = New-Object System.Data.SqlClient.SqlDataAdapter
+$SqlAdapter.SelectCommand = $SqlCmd
+$DataSet = New-Object System.Data.DataSet
+$nRecs = $SqlAdapter.Fill($DataSet)
+$nRecs | Out-Null
+#Populate Hash Table
+$objTable = $DataSet.Tables[0]
+#Export Hash Table to CSV File
+$objTable | Export-CSV $AttachmentPath1 -NoTypeInformation
+</code></pre>
+
+<p>Espero les sirva :)</p>
+:ET

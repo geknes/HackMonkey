@@ -22,11 +22,11 @@ footer-links:
   facebook: "GekneS"
   flickr:
   github: "geknes"
-  instagram: "jorgmel"
+  instagram: "jorgegrazam"
   linkedin:
   pinterest: 
   rss: # just type anything here for a working RSS icon
-  twitter: "GekneS"
+  twitter: "jorgegrazam"
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: "geknes"
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -84,3 +84,12 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+fb_comment_id: 284412583282532
+
+#comments:
+#provider : "facebook"
+#facebook:
+#appid : 284412583282532
+#num_posts : # 5 (default)
+#colorscheme : # "light" (default), "dark"

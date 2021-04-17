@@ -7,6 +7,12 @@
 
 @import "reset";
 @import "variables";
+
+/* $fa-font-path: "font-awesome/";
+@import 'font-awesome'; */
+
+/* @import "font-awesome-sprockets"; */
+/* @import "font-awesome"; */
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -18,6 +24,7 @@ html {
 }
 
 body {
+  display: block;
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
@@ -28,7 +35,29 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+  @include mobile {
+    width: auto;
+    margin: 0 24px;
+    padding: 0px;
+  }
 }
+
+.container-index {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+  @include mobile {
+    width: auto;
+    margin: 0 24px;
+    padding: 0px;
+  }
+}
+
+/* @media="(max-width: 551.98px)"
+.ap {
+    margin: 0 24px;
+} */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
@@ -45,45 +74,163 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: normal;
+  /* margin: 0px; */
+  letter-spacing: -0.011em;
+  line-height: 60px;
+  /* margin-top: 0.14em; */
+  color: $darkerGray;
+  a {
+    color: inherit;
+  }
+  @include mobile {
+    margin-top: 20px;
+    
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+h2 {
   font-size: 30px;
+  margin-top: 1.25em;
+  line-height: 36px;
+  letter-spacing: 0px;
+  color: $black;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  a {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 0px;
+    max-height: 56px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 700;
+
+    &:hover, &:active {
+      text-decoration: none;
+    }
+  }
+  /* margin-bottom: -0.28em; */
+}
+
+h4 {
+  font-size: 22px;
+  margin: 0px;
+  box-sizing: inherit;
+  font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: block;
+  font-weight: bold;
+  line-height: 28px;
+
+  @include mobile {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+h5 {
+  font-size: 13px;
+  color: $gray;
+  padding-right: 6px;
+  margin: 0px;
+  a {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 0px;
+    max-height: 56px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 700;
+
+    &:hover, &:active {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+h3 {
+  font-size: 22px;
+  margin: 0px;
+  box-sizing: inherit;
+  font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: block;
+  font-weight: bold;
+  line-height: 28px;
+
+  @include mobile {
+    font-size: 20px;
+    letter-spacing: 0px;
+    margin-bottom: 8px;
+    line-height: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+p {
+/*   margin: 15px 0; */
+  font-size: 21px;
+  /* margin-top: 2em; */
+  margin-bottom: 1.46em;
+  color: $darkerGray;
+  @include mobile {
+    letter-spacing: -0.003em;
+    line-height: 28px;
+    /* margin-top: 1.56em; */
+    font-size: 18px;
+    /* margin-bottom: -0.46em; */
+  }
+
   a {
     color: inherit;
   }
 }
 
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
-}
-
 a {
-  color: $blue;
-  text-decoration: none;
+  /* color: $blue; */
+  text-decoration: underline;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $black;
+    text-decoration: underline;
   }
+  
 }
 
 ul, ol {
-  margin: 15px 0;
+  /* margin: 15px 0; */
   padding-left: 30px;
 }
 
 ul {
   list-style-type: disc;
+  /* margin-block-start: 1em;
+  margin-block-end: 1em; */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
 ol {
@@ -115,9 +262,178 @@ img {
   max-width: none;
 }
 
-.date {
-  font-style: italic;
+.img-referencia {
   color: $gray;
+  font-size: 16px;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  a {
+    text-decoration: underline;
+    color: $gray;
+  }
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.resumen {
+  margin: inherit;
+  padding-top: 4px;
+  font-weight: 400;
+  p {
+    color: $gray;
+    text-overflow: Ellipsis; /* will make [...] at the end */
+    width: 100%; /* change to your preferences */
+    white-space: nowrap; /* paragraph to one line */
+    overflow:hidden; /* older browsers */
+    margin: inherit;
+    font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  @include mobile {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
+.date-resumen {
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  
+  @include mobile {
+    padding-top: 4px;
+  }
+}
+
+.date {
+  /* font-style: italic; */
+  color: $gray;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  i {
+    font-size: 16px;
+  }
+}
+
+.tags {
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  box-sizing: inherit;
+  font-weight: 400;
+  i {
+    font-size: 13px;
+    padding-right: 6px;
+    color: $gray;
+  }
+
+  @include mobile {
+
+    a{
+      text-overflow: ellipsis;
+    }
+    text-overflow: ellipsis;
+    overflow: hidden;
+    letter-spacing: 0px;
+  }
+
+}
+
+.o {
+  align-items: center;
+  display: flex;
+}
+
+.link-img {
+  object-fit: cover;
+  /* width: 200px; */
+  height: 134px;
+
+  img {
+    object-fit: cover;
+  }
+
+  @include mobile {
+    object-fit: cover;
+    width: 160px;
+    height: 100px;
+  }
+}
+
+.post-container {
+  width: 100%;
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  /* img {
+    width: 200px;
+    aspect-ratio: auto 200 / 134;
+    height: 134px;
+  } */
+  
+
+  img {
+    width: 200px;
+    aspect-ratio: auto 200 / 134;
+    height: 134px;
+    vertical-align: middle;
+    @include mobile {
+      object-fit: cover;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 32px;
+    opacity: 1;
+    box-sizing: inherit;
+  }
+}
+
+.post-container-contenido {
+  margin-right: 20px;
+  min-width: 0;
+  width: 100%;
+  display: block;
+  @include mobile {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.redes-sociales {
+  align-items: flex-end;
+  display: flex;
+  color: $gray;
+  @include mobile {
+    margin-bottom: 22px;
+  }
+}
+
+.iconos {
+  display: flex;
+  align-items: flex-end;
+}
+
+.icono {
+  text-align: center;
+  height: 29px;
+  width: 29px;
+  font-size: 22px;
+  vertical-align: middle;
+  
+  @include mobile {
+    padding-right: 6px;
+  }
+
+  a {
+    color: $gray;
+  }
 }
 
 // Specify the color of the selection
@@ -151,15 +467,158 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  /* max-width: 1140px; */
+  margin-bottom: 34px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  nav {
+    width: 100%;
+    margin: 0px;
+    /* box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05); */
+  }
+}
+
+.menu-nav {
+  display: flex;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  /* box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05); */
+}
+
+.navbar-collapse {
+  ul {
+    height: auto;
+  }
+  
+}
+
+.navbar-nav {
+  margin-left: 35px;
+  height: 41px;
+
+  @include mobile {
+    height: auto;
+  }
+}
+
+.nav-item {
+  max-width: 275px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.text {
+  color: #6d6e71;
+  box-sizing: border-box;
+  font-weight: lighter;
+  letter-spacing: -0.001em;
+  &.activo {
+    color: $black;
+    font-weight: 600;
+    border-bottom: 2px solid #1dc2f3 !important;
+  }
+}
+
+.nav-link {
+  font-family: Montserrat,sans-serif;
+  text-align: center;
+  font-weight: 300;
+  color: #6d6e71;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 30px !important;
+  min-height: 41px;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  /* border-bottom: 1px solid $lightGray; */
 
   @include mobile {
     text-align: center;
+  }
+}
+
+.cabecera-usuario-post {
+  display: flex;
+  
+  justify-content: space-between;
+  margin-top: 32px;
+  @include mobile {
+    margin-top: 26px;
+    flex-direction: column-reverse;
+  }
+}
+
+.nombre-usuario {
+  font-size: 14px;
+  a {
+    text-decoration: inherit;
+    color: rgba(0,0,0,0.8) !important;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    /* color: rgba(0,0,0,0.8) !important; */
+  }
+
+  .nombre-usuario {
+    @include mobile {
+      font-size: 14px;
+      width: auto;
+    }
+  }
+}
+
+.thumb {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  font-family: inherit;
+  img {
+    width: 200px;
+    aspect-ratio: auto 200 / 134;
+    height: 134px;
+    max-width: 100%;
+    @include mobile {
+      width: 100px;
+      aspect-ratio: auto 200 / 134;
+      height: 100px;
+    }
+  }
+}
+
+.usuario-fecha {
+  @include mobile {
+    margin-left: 12px;
+  }
+}
+
+.entry {
+  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+  letter-spacing: -0.003em;
+  line-height: 32px;
+}
+
+.avatar {
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 50%;
   }
 }
 
@@ -224,7 +683,7 @@ nav {
   }
 
   a {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     color: $darkGray;
     text-align: right;
     font-weight: 300;
@@ -240,6 +699,13 @@ nav {
 //
 // .main
 //
+
+.posts {
+  padding-bottom: 3em;
+  @include mobile {
+    padding-bottom: 0px;
+  }
+}
 
 .posts > .post {
   padding-bottom: 2em;
@@ -262,7 +728,7 @@ nav {
   }
 
   .comments {
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
   .read-more {
@@ -275,12 +741,93 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: $black;
 }
 
 footer {
+  justify-content: center;
   padding: 20px 0;
   text-align: center;
+  margin-bottom: 10px;
+  div {
+    justify-content: center;
+  }
+}
+
+.copy {
+  color: $gray;
+  margin-bottom: 10px;
+}
+
+.carousel-link {
+  /* position: absolute; */
+  img {
+    object-fit: cover;
+    height: 320px;
+    width: 100%;
+  }
+  @include mobile {
+    img {
+      height: 210px;
+    }
+    
+  }
+}
+
+.carousel-titulo {
+ /*  position: absolute; */
+/*   right: 15%;
+  left: 15%; */
+  z-index: 10;
+  padding-top: 20px;
+  
+  h3 {
+    line-height: 1;
+    font-size: 34px;
+    color: $white;
+  }
+  @include mobile {
+    h3 {
+      line-height: 1;
+      font-size: 26px;
+      color: $white;
+    }
+  }
+}
+
+.fondo {
+  filter: brightness(0.8);
+}
+
+.absoluto {
+  position: absolute;
+  bottom: 36px;
+  margin-right: 45px;
+  margin-left: 45px;
+  @include mobile {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.relativo {
+  position: relative;
+  
+}
+
+.parrafo-imagen {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.titulo-post {
+  a {
+    text-decoration: none;
+  }
+}
+
+.navbar-brand {
+  text-decoration: none;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

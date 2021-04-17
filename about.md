@@ -1,15 +1,19 @@
 ---
 layout: page
-title: A cerca de mi :)
+active: about
+title: A cerca de mi
 permalink: /about/
 ---
 
-Geek, apasionado por la tecnología.
+[<img  src="{{ site.baseurl }}/images/about-me.jpeg" alt="Constructocat by https://github.com/jasoncostello"/>]({{ site.baseurl }}/about){:class="img-responsive"}
 
-### Más Información
+# ¿Quién es Jorge Graza?
 
-Si quieres saber más acerca de mi puedes mandarme un mail.
+Hola, mi nombre es Jorge. Soy bachiller en ingeniería de sistemas y egresado de la Universidad Nacional José Faustino Sanchez Carrión - Huacho. Me gusta mucho la tecnología, la música, las cosas retro, los libros, la caminata y el café. 
 
-### Contacto
+Actualmente trabajo como Ingeniero de Datos en una consultora viendo temas de Big Data. Pero siempre me encuentro automatizando cosas o aprendiendo algo nuevo. Desde el colegio ya me inclinaba al mundo tecnológico y ya en la universidad sabía que estaba en el camino correcto.
 
-[jg.melg@gmail.com](mailto:jg.melg@gmail.com)
+Mis lenguajes de progracación favoritos son Java, seguido de Powershell y Python. En ese orden de preferencia y es el mismo orden en que los aprendí (ahora que escribo esto me doy cuenta del porque el orden de preferencia).
+
+Al principio me constó un poco pero finalmente me adapte y ahora quiero transmitir lo aprendido. Si quieres conversar sobre algún tema que tengamos en común no dudes en mandarme un [mail](mailto:jg.melg@gmail.com), trataré de responder tan pronto como pueda.
+

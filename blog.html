@@ -1,0 +1,105 @@
+---
+layout: default
+active: blog
+permalink: /blog/
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="">
+      <div class="post-container">
+        <div class="post-container-contenido">
+          <div class="tags">
+            
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            {% for category in post.categories %}
+              <h5>
+                <a href="#">{{ category }}</a>
+              </h5>
+            {% endfor %}
+
+          </div>
+          <div class="titulo-post">
+            <!-- Titulo -->
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              <h4>
+                {{ post.title }}
+              </h4>
+            </a>
+            <!-- ***** -->
+          </div>
+          <div class="resumen">
+            <!-- Seleccionar el parrafo con id="_parrafo"  -->
+            {% assign foundImage = 0 %}
+
+            {% assign parrafos = post.content | split:"<p" %}
+            
+            {% for parrafo in parrafos %}
+
+              {% if parrafo contains 'id="_parrafo"' %}
+              
+                  {% assign contenido = parrafo | split:"</p>" | first | replace:'id="_parrafo">','' %}
+                  <p>{{ contenido }}</p>
+
+              {% endif %}
+            {% endfor %}
+            <!-- ***** -->
+            {%- comment -%} <p>{{ post.content | strip_html | truncatewords:75 }}</p> {%- endcomment -%}
+          </div>
+          <!-- fecha -->
+          <div class="date date-resumen">
+            <div>
+            {% assign mes = post.date | date: "%m" %}
+            {% case mes %}
+              {% when '01' %} Ene
+              {% when '02' %} Feb
+              {% when '03' %} Mar
+              {% when '04' %} Abr
+              {% when '05' %} May
+              {% when '06' %} Jun
+              {% when '07' %} Jul
+              {% when '08' %} Ago
+              {% when '09' %} Sep
+              {% when '10' %} Oct
+              {% when '11' %} Nov
+              {% when '12' %} Dic
+            {% endcase %}
+            {{ post.date | date: "%-d, %Y " }}
+            {%- comment -%} <div> {%- endcomment -%}
+              {%- comment -%} <i class="fa fa-star" aria-hidden="true"></i> {%- endcomment -%}
+            {%- comment -%} </div> {%- endcomment -%}
+            </div>
+            <div>
+              <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- ***** -->
+          
+        </div>
+        {%- comment -%} <div class="thumb"> {%- endcomment -%}
+          <!-- Seleccionar la primera imagen -->
+          {% assign foundImage = 0 %}
+          {% assign images = post.content | split:"<img " %}
+          {% for image in images %}
+            {% if image contains 'src' %}
+
+                {% if foundImage == 0 %}
+                    {% assign html = image | split:"/>" | first %}
+                    <a class="link-img" href="{{ site.baseurl }}{{ post.url }}"><img {{ html }} /></a>
+                    {% assign foundImage = 1 %}
+                {% endif %}
+
+            {% endif %}
+          {% endfor %}
+          <!-- ***** -->
+        {%- comment -%} </div> {%- endcomment -%}
+      </div>
+
+      <!--<div class="entry">
+         {{ post.excerpt }} 
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer más...</a> -->
+    </article>
+  {% endfor %}
+</div>

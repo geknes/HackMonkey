@@ -1,0 +1,38 @@
+<div class="cabecera-usuario-post">
+    <div class="o">
+      <div class="">
+        <a href="{{ site.baseurl }}/about" class="avatar"><img src="{{ site.avatar }}" /></a>
+      </div>
+      <div class="usuario-fecha">
+        <div class="nombre-usuario">
+          <a href="{{ site.baseurl }}/about">{{ site.name }}</a>
+        </div>
+        <!-- fecha -->
+        <div class="date">
+          {{ page.date | date: "%-d" }}
+          {% assign mes = page.date | date: "%m" %}
+          {% case mes %}
+            {% when '01' %} enero
+            {% when '02' %} febrero
+            {% when '03' %} marzo
+            {% when '04' %} abril
+            {% when '05' %} mayo
+            {% when '06' %} junio
+            {% when '07' %} julio
+            {% when '08' %} agosto
+            {% when '09' %} septiembre
+            {% when '10' %} octubre
+            {% when '11' %} noviembre
+            {% when '12' %} diciembre
+          {% endcase %}
+          {{ page.date | date: "de %Y" }}
+        </div>
+        <!-- ***** -->
+      </div>
+    </div>
+    <div class="redes-sociales">
+      <div class="iconos">
+        {% include svg-icons.html %}
+      </div>
+    </div>
+  </div>

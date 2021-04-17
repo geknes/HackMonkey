@@ -123,6 +123,9 @@ h2 {
       text-decoration: none;
     }
   }
+  @include mobile {
+    margin-top: 0;
+  }
   /* margin-bottom: -0.28em; */
 }
 
@@ -484,6 +487,9 @@ img {
     margin: 0px;
     /* box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05); */
   }
+  @include mobile {
+    margin-bottom: 6px;
+  }
 }
 
 .menu-nav {
@@ -710,6 +716,7 @@ nav {
 
 .posts {
   padding-bottom: 3em;
+  margin-top: 1.25em;
   @include mobile {
 
     padding-bottom: 0px;

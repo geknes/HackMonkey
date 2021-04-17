@@ -5,6 +5,7 @@ title: A cerca de mi
 permalink: /about/
 ---
 
+{:class="parrafo-imagen"}
 [<img  src="{{ site.baseurl }}/images/about-me.jpeg" alt="Constructocat by https://github.com/jasoncostello"/>]({{ site.baseurl }}/about){:class="img-responsive"}
 
 # ¿Quién es Jorge Graza?

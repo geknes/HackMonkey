@@ -2,21 +2,22 @@
 layout: post # Tipo de plantilla
 active: blog # Ruta activa
 title: Te dedico la última luna de abril # título del post, se muestra
+date: 2021-05-01
 categories: [fragmentos] #Categorías para escribir más de uno se debe separar por comas
 ---
 
 {:class="parrafo-imagen"}
 ![image-title-here](https://images.unsplash.com/photo-1532486708715-ef524e3c2fdf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80){:class="img-responsive"}
-<!-- Colocar una imágen -->
+
 
 
 {:class="img-referencia"}
 Foto de [青 晨](https://unsplash.com/@jiangxulei1990) en [Unsplash](https://unsplash.com)
-<!-- Referencia de la foto -->
+
 
 
 {:id="_parrafo"}
-<!-- Empezar a escribir despuede de _parrafo.  -->
+<!-- Empezar a escribir despuede de _parrafo. -->
 Abril pasó en un abrir y cerrar de ojos. Me dejó varado una vez más en mis vacaciones y retomé algunas actividades olvidadas, las comencé nuevamente. Abril me trajo muchas glorias consigo y unos días grises que poco a poco darán paso a al frío invierno.
 
 Mis pies están congelados, eso de usar doble medias hace que se sientan los pies hinchaos y fríos. Abril también se llevó a muchas personas y eso es algo que no puedo mencionar sin un dolor en el pecho.

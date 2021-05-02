@@ -1,0 +1,123 @@
+---
+layout: default
+active: blog
+permalink: /linktr/
+---
+
+<div class="posts">
+ <!--  <img class="linktr" src="" alt=""> -->
+  <div class="linktr">
+  </div>
+  <div class="linktr-content" >
+    <a href="{{ site.baseurl }}/about" class="avatar">
+      <img src="{{ site.avatar }}" />
+    </a>
+
+    <div class="linktr-botones"> 
+
+      {% if site.footer-links.blog %}
+      <div class="">
+          <a class="btn btn-lg" href="{{ site.footer-links.blog }}">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <label for="">Blog</label>
+        </a>
+      </div>
+      {% endif %}
+
+      {% if site.footer-links.youtube %}
+      <div class="">
+      <a class="btn btn-lg" href="https://youtube.com/{{ site.footer-links.youtube }}">
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          <label for="">YouTube</label>
+      </a>
+      </div>
+      {% endif %}
+
+      {% if site.footer-links.dribbble %}
+      <div class="">
+          <a class="btn btn-lg" href="https://dribbble.com/{{ site.footer-links.dribbble }}">
+              <i class="svg-icon dribbble" aria-hidden="true"></i>
+          </a>
+      </div>
+      {% endif %}
+      
+      {% if site.footer-links.facebook %}
+      <div class="">
+      <a class="btn btn-lg" href="https://www.facebook.com/{{ site.footer-links.facebook }}">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          <label for="">Facebook</label>
+      </a>
+      </div>{% endif %}
+      {% if site.footer-links.flickr %}
+      <div class="">
+      <a class="btn btn-lg" href="https://www.flickr.com/{{ site.footer-links.flickr }}">
+          <i class="svg-icon flickr" aria-hidden="true"></i>
+      </a>
+      </div>{% endif %}
+      
+      {% if site.footer-links.instagram %}
+      <div class="">
+      <a class="btn btn-lg" href="https://instagram.com/{{ site.footer-links.instagram }}">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <label for="">Instaram</label>
+      </a>
+      </div>{% endif %}
+      {% if site.footer-links.linkedin %}
+      <div class="">
+      <a class="btn btn-lg" href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </a>
+      </div>{% endif %}
+      {% if site.footer-links.pinterest %}
+      <div class="">
+      <a class="btn btn-lg" href="https://www.pinterest.com/{{ site.footer-links.pinterest }}">
+          <i class="fa fa-pinterest" aria-hidden="true"></i>
+      </a>
+      </div>{% endif %}
+      {% if site.footer-links.rss %}
+      <div class="">
+      <a class="btn btn-lg" href="{{ site.baseurl }}/feed.xml">
+          <i class="fa fa-rss" aria-hidden="true"></i>
+      </a>
+      </div>{% endif %}
+      {% if site.footer-links.twitter %}
+      <div class="">
+      <a class="btn btn-lg" href="https://www.twitter.com/{{ site.footer-links.twitter }}">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <label for="">Twitter</label>
+      </a>
+      </div>
+      {% endif %}
+      {% if site.footer-links.stackoverflow %}
+      <div class="">
+      <a class="btn btn-lg" href="http://stackoverflow.com/{{ site.footer-links.stackoverflow }}">
+          <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+          <label for="">StackOverflow</label>
+      </a>
+      </div>{% endif %}
+      
+      {% if site.footer-links.github %}
+      <div class="">
+        <a class="btn btn-lg" href="https://github.com/{{ site.footer-links.github }}">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <label for="">GitHub</label>
+        </a>
+      </div>
+      {% endif %}
+      
+      {% if site.footer-links.email %}
+      <div class="">
+        <a class="btn btn-lg" href="mailto:{{ site.footer-links.email }}">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <label for="">Mail</label>
+        </a>
+      </div>
+      {% endif %}
+
+    </div>
+
+    
+
+  </div>
+  
+</div>

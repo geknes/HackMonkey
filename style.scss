@@ -653,7 +653,7 @@ img {
   top: 0;
   width: -webkit-fill-available;
   @include mobile {
-    width: inherit;
+    /* width: inherit; */
     height: 100%;
   }
 }

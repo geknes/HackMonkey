@@ -650,6 +650,8 @@ img {
   max-width: inherit;
   background-color: $darkGray;
 
+  top: 0;
+  width: -webkit-fill-available;
   @include mobile {
     width: inherit;
     height: 100%;

@@ -26,7 +26,7 @@ Una actividad inusual en el cielo fue motivo de dedicación amorosa. Muchas pers
 
 Pero lo que si pude ver fueron las tres últimas películas de Star Trek, es una franquicia a la que no le había tomado mucha importancia pero de la que ahora me encuentro encantado. También se acerca el día de la guerra de las galaxias, espero estar a la altura ese día. Si pudieras recomendarme algo estaría agradecido.
 
-Y bueno, al final del día el sol se ocultó y el premio a la comedia mas graciosa del mes fue para el debate entre Keiko y Castillo.
+Y bueno, al final del día el sol se ocultó y el premio a la comedia mas graciosa del mes fue para el debate entre Keiko y Castillo. Aún me falta migrar muchos posts de mi otro blog, lo consolidaré aquí.
 
 
 

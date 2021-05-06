@@ -1,0 +1,15 @@
+I"�<p class="parrafo-imagen"><img src="https://" alt="image-title-here" class="img-responsive" /></p>
+
+<!-- Colocar una imágen -->
+
+<p class="img-referencia">Foto de <a href="https://">Autor</a> en <a href="https://">Lugar de donde salió</a></p>
+
+<!-- Referencia de la foto -->
+
+<p id="_parrafo">Para habilitar la característica de modo lectura en google chrome, que normalmente permanece oculta para la version de escritorio, es necesario ingresar la siguiente línea en la barra de direcciones:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chrome://flags/#enable-reader-mode
+</code></pre></div></div>
+<!-- Empezar a escribir despues de _parrafo.  -->
+
+:ET

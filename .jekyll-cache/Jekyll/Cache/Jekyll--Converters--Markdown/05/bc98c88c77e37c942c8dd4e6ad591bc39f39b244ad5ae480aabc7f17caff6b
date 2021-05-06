@@ -1,0 +1,27 @@
+I"q<p class="parrafo-imagen"><img src="https://" alt="image-title-here" class="img-responsive" /></p>
+
+<!-- Colocar una imágen -->
+
+<p class="img-referencia">Foto de <a href="https://">Autor</a> en <a href="https://">Lugar de donde salió</a></p>
+
+<!-- Referencia de la foto -->
+
+<p id="_parrafo">Para habilitar la característica de modo lectura en google chrome, que normalmente permanece oculta para la version de escritorio, es necesario ingresar la siguiente línea en la barra de direcciones:</p>
+
+<p><code class="language-plaintext highlighter-rouge">
+chrome://flags/#enable-reader-mode
+</code></p>
+
+<p>Al acceder a la dirección anterior verás la opción <strong>Enable Reader Mode</strong> marcada como Default.</p>
+
+<p><a href="/images/2021-05-05/2021-05-05_09h17_59.png"><img src="/images/2021-05-05/2021-05-05_09h17_59.png" alt="flags/#enable-reader-mode" style="width: 100%;" /></a></p>
+
+<p>Deberás cambiar la opción a <strong>Enable</strong> y luego refrescar la página.</p>
+
+<p><a href="/images/2021-05-05/2021-05-05_09h23_15.png"><img src="/images/2021-05-05/2021-05-05_09h23_15.png" alt="flags/#enable-reader-mode" style="width: 100%;" /></a></p>
+
+<p><a href="/images/2021-05-05/2021-05-05_09h23_15.png"><img src="/images/2021-05-05/2021-05-05_15h11_15.png" alt="flags/#enable-reader-mode" style="width: 100%;" /></a></p>
+
+<!-- Empezar a escribir despues de _parrafo.  -->
+
+:ET

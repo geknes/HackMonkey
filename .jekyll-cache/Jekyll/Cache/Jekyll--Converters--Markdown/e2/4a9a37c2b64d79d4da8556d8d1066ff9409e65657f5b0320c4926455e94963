@@ -1,0 +1,14 @@
+I"�<p class="parrafo-imagen"><img src="https://images.unsplash.com/photo-1617909517054-64d4958be1c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;q=80" alt="image-title-here" class="img-responsive" /></p>
+
+<!-- Colocar una imágen -->
+
+<p class="img-referencia">Foto de <a href="https://unsplash.com/@stickermule">Autor</a> en <a href="https://">Lugar de donde salió</a></p>
+
+<!-- Referencia de la foto -->
+
+<p id="_parrafo">Para poner texto o algún elemento encima de una imagen utilizando css podemos usar el siguiente código:
+<!-- Empezar a escribir despuede de _parrafo.  --></p>
+
+<script src="https://gist.github.com/geknes/2cdee11c32585f5b03689af79251b0fb.js"></script>
+
+:ET

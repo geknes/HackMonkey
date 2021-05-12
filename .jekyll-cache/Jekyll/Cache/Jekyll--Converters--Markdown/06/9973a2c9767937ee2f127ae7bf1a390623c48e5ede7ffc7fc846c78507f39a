@@ -1,0 +1,17 @@
+I"P<p class="parrafo-imagen"><img src="https://" alt="image-title-here" class="img-responsive" /></p>
+
+<!-- Colocar una imágen -->
+
+<p class="img-referencia">Foto de <a href="https://">Autor</a> en <a href="https://">Lugar de donde salió</a></p>
+
+<!-- Referencia de la foto -->
+
+<p id="_parrafo">miércoles, 12 de mayo de 2021
+9:21</p>
+
+<p>Para poner texto o algún elemento encima de una imagen utilizando css podemos usar el siguiente código
+<!-- Empezar a escribir despuede de _parrafo.  --></p>
+
+<script src="https://gist.github.com/geknes/2cdee11c32585f5b03689af79251b0fb.js"></script>
+
+:ET
